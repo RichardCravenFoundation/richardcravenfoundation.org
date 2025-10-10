@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Richard Craven Foundation</title>
+  <meta name="description" content="The Richard Craven Foundation is a 501(c)(3) nonprofit supporting families in need with groceries, essentials, utility support, and more—honoring Richard Craven’s legacy of generosity." />
+  <meta property="og:title" content="Richard Craven Foundation" />
+  <meta property="og:description" content="Helping families in need—food, clothing, essentials, and support." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/images/donate-photo.png" id="ogImageMeta"/>
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="icon" href="/favicon.ico" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { theme: { extend: { colors: { brand: { 600:'#4f46e5',700:'#4338ca' } } } } }</script>
+  <style>:focus-visible{outline:2px dashed #6366f1;outline-offset:3px}</style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+  <header class="bg-white shadow-sm sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-3">
+        <img src="/images/rcf-logo.png" alt="Richard Craven Foundation logo" class="h-10 w-auto" />
+        <div>
+          <p class="font-bold text-slate-900 leading-tight">Richard Craven Foundation</p>
+          <p class="text-xs text-slate-500 leading-tight">Richard was kind. Richard was a giver. Be a Richard.</p>
+        </div>
+      </a>
+      <nav class="hidden md:block">
+        <ul class="flex items-center gap-6 text-sm font-medium">
+          <li><a href="#mission" class="hover:text-brand-700">Mission</a></li>
+          <li><a href="#events" class="hover:text-brand-700">Events</a></li>
+          <li><a href="#donate" class="hover:text-brand-700">Donate</a></li>
+        </ul>
+      </nav>
+      <a href="#donate" class="inline-flex items-center gap-2 rounded-xl bg-brand-600 text-white px-4 py-2 text-sm font-semibold shadow hover:bg-brand-700">Donate</a>
+    </div>
+  </header>
+
+  <section id="holiday-banner" class="bg-red-600 text-white text-center py-3 px-4 hidden">
+    <p class="text-base md:text-lg font-semibold">
+      🎁 <a id="bannerLink" href="/images/holiday-raffle-flyer.png" target="_blank" class="underline hover:text-yellow-300">Holiday Raffle Donations Needed!</a> Support families this Thanksgiving and Christmas season. 🎄
+    </p>
+  </section>
+
+  <section id="home" class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10 bg-gradient-to-br from-brand-600 via-brand-700 to-slate-900"></div>
+    <div class="max-w-7xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-10 items-center text-white">
+      <div>
+        <h1 id="heroTitle" class="text-4xl md:text-5xl font-extrabold leading-tight">Honoring Richard Craven by helping families who need it most.</h1>
+        <p id="heroSubtitle" class="mt-4 text-white/90 text-lg">We provide groceries, clothing, household items, and emergency support—powered by community donations and volunteers.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#donate" class="inline-flex items-center rounded-xl bg-white text-brand-800 px-5 py-3 font-semibold shadow hover:bg-slate-100">Make a Donation</a>
+          <a href="#events" class="inline-flex items-center rounded-xl ring-1 ring-white/70 px-5 py-3 font-semibold hover:bg-white/10">Upcoming Events</a>
+        </div>
+        <p class="mt-6 text-sm text-white/80">501(c)(3) • EIN: <span id="einText">87-3935599</span></p>
+      </div>
+      <div class="relative">
+        <img id="heroImage" src="/images/donate-photo.png" alt="Families donating toys and food" class="rounded-2xl shadow-2xl w-full object-cover aspect-[4/3]" />
+      </div>
+    </div>
+  </section>
+
+  <section id="events" class="py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-slate-900">Upcoming Events</h2>
+      <div id="eventsGrid" class="mt-6 grid md:grid-cols-2 gap-6"></div>
+    </div>
+  </section>
+
+  <section id="donate" class="py-16 md:py-24 bg-gradient-to-b from-white to-slate-100">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="text-center max-w-2xl mx-auto">
+        <h2 class="text-3xl font-bold text-slate-900">Donate</h2>
+        <p class="mt-3 text-slate-600">Every dollar helps a local family. Choose a method below or contact us for in-kind donations.</p>
+      </div>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <a id="paypalLink" href="https://www.paypal.com/donate?business=richardcravenfoundation@gmail.com" class="block rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-900/5 hover:shadow">
+          <p class="font-semibold">PayPal</p>
+          <p class="text-sm text-slate-600 mt-2">Give once or monthly using your PayPal account.</p>
+        </a>
+        <a id="venmoLink" href="https://venmo.com/u/RichardCravenFoundation" class="block rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-900/5 hover:shadow">
+          <p class="font-semibold">Venmo</p>
+          <p class="text-sm text-slate-600 mt-2">Give quickly via Venmo @RichardCravenFoundation.</p>
+        </a>
+        <a id="checkLink" href="mailto:hello@richardcravenfoundation.org?subject=ACH%20Donation%20Instructions" class="block rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-900/5 hover:shadow">
+          <p class="font-semibold">Check / ACH</p>
+          <p class="text-sm text-slate-600 mt-2">
+            <span class="block">Mail checks to:</span>
+            <span id="checkName" class="block font-medium">The Richard Craven Foundation</span>
+            <span id="checkAddress" class="block">1233 E Washington St, Joliet, IL 60433</span>
+            <span id="checkNote" class="block mt-2">Make checks payable to <strong>The Richard Craven Foundation</strong>.</span>
+          </p>
+          <p id="receiptNote" class="text-sm text-slate-600 mt-3">Include your email in the memo to receive a receipt by email.</p>
+        </a>
+      </div>
+      <p class="mt-6 text-sm text-slate-500">You’ll receive a donation receipt for your records. Please consult your tax advisor regarding deductibility.</p>
+    </div>
+  </section>
+
+  <footer class="bg-slate-900 text-slate-300">
+    <div class="max-w-7xl mx-auto px-4 py-10 grid md:grid-cols-3 gap-8">
+      <div>
+        <p class="font-bold text-white">Richard Craven Foundation</p>
+        <p class="text-sm mt-2">© <span id="year"></span> Richard Craven Foundation. All rights reserved.</p>
+        <p class="text-xs mt-2">501(c)(3) • EIN: <span id="einFooter">87-3935599</span></p>
+      </div>
+      <div>
+        <p class="font-semibold text-white">Quick Links</p>
+        <ul class="mt-3 space-y-2 text-sm">
+          <li><a href="#mission" class="hover:underline">Mission</a></li>
+          <li><a href="#events" class="hover:underline">Events</a></li>
+          <li><a href="#donate" class="hover:underline">Donate</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-semibold text-white">Transparency</p>
+        <ul class="mt-3 space-y-2 text-sm">
+          <li><a href="#" class="hover:underline">Annual Report (PDF)</a></li>
+          <li><a href="#" class="hover:underline">Form 990 (PDF)</a></li>
+          <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Load CMS content
+    fetch('/data/site.json', {cache: 'no-store'})
+      .then(r => r.ok ? r.json() : null)
+      .then(cfg => {
+        if(!cfg) return;
+        const $ = s => document.querySelector(s);
+        $('#heroTitle').textContent = cfg.hero_title || $('#heroTitle').textContent;
+        $('#heroSubtitle').textContent = cfg.hero_subtitle || $('#heroSubtitle').textContent;
+        $('#einText').textContent = cfg.ein || $('#einText').textContent;
+        $('#einFooter').textContent = cfg.ein || $('#einFooter').textContent;
+        if (cfg.hero_image) $('#heroImage').src = cfg.hero_image;
+        if (cfg.og_image) { const og = document.getElementById('ogImageMeta'); if (og) og.setAttribute('content', cfg.og_image); }
+
+        // Banner
+        const month = new Date().getMonth() + 1;
+        const shouldShow = (cfg.banner_enabled_months || []).includes(month);
+        const banner = document.getElementById('holiday-banner');
+        if (banner) {
+          banner.classList.toggle('hidden', !shouldShow);
+          const bl = document.getElementById('bannerLink');
+          if (cfg.banner_link && bl) bl.href = cfg.banner_link;
+          if (cfg.banner_text && bl) bl.textContent = cfg.banner_text;
+        }
+
+        // Donate links
+        if (cfg.donate) {
+          if (cfg.donate.paypal_url) $('#paypalLink').href = cfg.donate.paypal_url;
+          if (cfg.donate.venmo_url) $('#venmoLink').href = cfg.donate.venmo_url;
+          if (cfg.donate.check_name) $('#checkName').textContent = cfg.donate.check_name;
+          if (cfg.donate.check_address) $('#checkAddress').textContent = cfg.donate.check_address;
+          if (cfg.donate.check_note) $('#checkNote').innerHTML = cfg.donate.check_note;
+          if (cfg.donate.receipt_note) $('#receiptNote').textContent = cfg.donate.receipt_note;
+        }
+
+        // Events
+        const grid = document.getElementById('eventsGrid');
+        if (grid && Array.isArray(cfg.events)) {
+          grid.innerHTML = '';
+          cfg.events.forEach(ev => {
+            const extraLink = ev.extra_text && ev.extra_href ? `<a href="${ev.extra_href}" class="text-sm font-semibold text-brand-700 hover:underline">${ev.extra_text}</a>` : '';
+            grid.insertAdjacentHTML('beforeend', `
+              <article class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-900/5">
+                <p class="text-sm font-semibold text-brand-700">${ev.kicker || ''}</p>
+                <h3 class="mt-1 text-lg font-bold">${ev.title || ''}</h3>
+                <p class="text-sm text-slate-600 mt-2">${ev.desc || ''}</p>
+                <div class="mt-4 flex gap-3">
+                  <a href="${ev.link_href || '#'}" class="text-sm font-semibold text-brand-700 hover:underline">${ev.link_text || 'Learn more'}</a>
+                  ${extraLink}
+                </div>
+              </article>
+            `);
+          });
+        }
+      })
+      .catch(() => {});
+  </script>
+</body>
+</html>
